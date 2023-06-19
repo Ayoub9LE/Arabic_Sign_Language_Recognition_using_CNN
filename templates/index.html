@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arabic Sign Language Recognition</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="toolbar">
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="{{ url_for('samples') }}">Samples</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="app">
+    <div class="upload-container">
+      <input type="file" id="image-upload">
+      <label for="image-upload" id="upload-label">
+        <span class="icon">📁</span>
+        Upload Image
+      </label>
+    </div>
+
+    <canvas id="uploaded-canvas"></canvas>
+
+    <button id="predict-btn">Predict</button>
+
+    <textarea id="output" rows="4" placeholder="Prediction result"></textarea>
+
+    <button id="text-to-voice-btn">Text to Voice</button>
+  </div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Model Image</title>
+  <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="toolbar">
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="{{ url_for('samples') }}">Samples</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="app">
+    <h1>Samples</h1>
+    <img src="{{ url_for('static', filename='images/sample.png') }}" alt="Sample Image" image>
+  </div>
+
+  <script src="../static/script.js"></script>
+</body>
+</html>
